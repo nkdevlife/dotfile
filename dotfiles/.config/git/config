@@ -1,0 +1,9 @@
+[user]
+	email = by31536000sec@gmail.com
+	name = nkdevlife
+
+[core]
+	excludesFile = ~/.config/git/ignore
+[ghq]
+	root = ~/go/src
+	root = ~/ghq

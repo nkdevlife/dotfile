@@ -9,6 +9,8 @@ source ~/.config/zsh/ohmy.zsh
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+eval "$(mise activate zsh)"
+
 # 補完やキーバインドを設定するシェルスクリプトが標準出力に表示される
 source <(fzf --zsh)
 

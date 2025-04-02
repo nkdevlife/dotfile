@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -veuo pipefail
+set -euo pipefail
 
 cd $HOME
 
@@ -49,7 +49,7 @@ fi
 "$MY_DOTFILE_REPO"/script/setup.sh
 
 # night shift
-"$MY_DOTFILE_REPO"/script/night-shift.sh
+# "$MY_DOTFILE_REPO"/script/night-shift.sh
 
 # restart
 read -p "Restart now? (y/N) " ans

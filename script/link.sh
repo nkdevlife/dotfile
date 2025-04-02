@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -veuo pipefail
+set -euo pipefail
 
 # dotfilesディレクトリのパスを取得
 DOTFILE_ROOT=$(cd "$(dirname "$0")/.." && pwd)

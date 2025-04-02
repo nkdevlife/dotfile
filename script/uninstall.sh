@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -veuo pipefail
+set -euo pipefail
 
 # unlink
 [[ -L $HOME/.config ]] && unlink $HOME/.config

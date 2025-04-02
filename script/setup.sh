@@ -19,8 +19,6 @@ echo 'Setting up macOS...'
 sudo nvram StartupMute=%01
 # 時計アイコンクリック時に OS やホスト名 IP を表示する
 sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
-# dark mode
-defaults write -g NSRequiresAquaSystemAppearance -bool true
 
 # =============================
 # ユーザーインターフェース設定
@@ -28,45 +26,45 @@ defaults write -g NSRequiresAquaSystemAppearance -bool true
 # ファイルを開くときのアニメーションを無効化
 defaults write -g NSAutomaticWindowAnimationsEnabled -bool false
 # ツールチップ表示の遅延をなくす
-defaults write -g NSInitialToolTipDelay -int 0
+defaults write -g NSInitialToolTipDelay -integer 0
 # ウィンドウリサイズ速度を高速化
 defaults write -g NSWindowResizeTime -float 0.1
 # スクロールバーを常時表示
-defaults write -g AppleShowScrollBars -string "Always"
+defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
 
 # =============================
 # Finder 設定
 # =============================
 # 非表示ファイルやフォルダを表示
-defaults write -g com.apple.finder AppleShowAllFiles -bool true
+defaults write com.apple.finder AppleShowAllFiles -bool true
 # 全ての拡張子のファイルを表示
-defaults write -g AppleShowAllExtensions -bool true
+defaults write AppleShowAllExtensions -bool true
 # Finder のタイトルバーにフルパスを表示
-defaults write -g com.apple.finder _FXShowPosixPathInTitle -bool true
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 # ディレクトリをリストの先頭に表示
-defaults write -g com.apple.finder _FXSortFoldersFirst -bool true
+defaults write com.apple.finder _FXSortFoldersFirst -bool true
 # Finder のアニメーション効果を全て無効化
-defaults write -g com.apple.finder DisableAllAnimations -bool true
+defaults write com.apple.finder DisableAllAnimations -bool true
 # Finder にパスバー、ステータスバー、タブバーを表示
-defaults write -g com.apple.finder ShowPathbar -bool true
-defaults write -g com.apple.finder ShowStatusBar -bool true
-defaults write -g com.apple.finder ShowTabView -bool true
+defaults write com.apple.finder ShowPathbar -bool true
+defaults write com.apple.finder ShowStatusBar -bool true
+defaults write com.apple.finder ShowTabView -bool true
 # Finder を終了可能にする
-defaults write -g com.apple.Finder QuitMenuItem -bool true
+defaults write com.apple.Finder QuitMenuItem -bool true
 # ゴミ箱を空にするときの警告無効化
-defaults write -g com.apple.finder WarnOnEmptyTrash -bool false
+defaults write com.apple.finder WarnOnEmptyTrash -bool false
 
 # =============================
 # Dock 設定
 # =============================
 # Dock を自動的に隠す
-defaults write -g com.apple.dock autohide -bool true
+defaults write com.apple.dock autohide -bool true
 # Dock の表示遅延をなくす
-defaults write -g com.apple.dock autohide-delay -float 0
+defaults write com.apple.dock autohide-delay -float 0
 # Dock のアイコンサイズを変更
-defaults write -g com.apple.dock tilesize -int 40
+defaults write com.apple.dock tilesize -int 40
 # Dock からすべてのアプリを削除
-defaults write -g com.apple.dock persistent-apps -array
+defaults write com.apple.dock persistent-apps -array
 # Dock のアイコンホバー時に拡大設定
 defaults write com.apple.dock magnification -bool true
 # Dock のアイコンホバー時に拡大サイズ

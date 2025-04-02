@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -veuo pipefail
+set -euo pipefail
 
 echo '---------- set up Night Shift ----------'
 if which nightlight; then

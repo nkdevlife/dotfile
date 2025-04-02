@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -eu
+set -veuo pipefail
 
 # dotfilesディレクトリのパスを取得
 DOTFILE_ROOT=$(cd "$(dirname "$0")/.." && pwd)
@@ -28,3 +28,5 @@ for FILE in .??*; do
 
     ln -snfv "${SRC}" "${DEST}"
 done
+
+cd $HOME

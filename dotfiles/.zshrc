@@ -5,6 +5,13 @@ export XDG_STATE_HOME="$HOME/.local/state"
 export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_RUNTIME_DIR="/run/user/$UID"
 
+# prompt
+source "$HOME/.config/zsh/zsh-prompt-setup.sh"
+
+# alias
+source "$HOME/.config/zsh/alias.zsh"
+
+
 # =============================
 # zsh config
 # =============================
@@ -67,11 +74,20 @@ cdrepo() {
 	local repodir=$(ghq list | fzf -1 +m) && cd $(ghq root)/$repodir
 }
 
-# 選択したリポジトリをvscodeで開く
+# ghq code
 coderepo() {
 	local repodir=$(ghq list | fzf -1 +m) &&
 	echo Open VSCode WorkSpace! : $(ghq root)/$repodir
 	if [ -n "$repodir" ]; then
 		code $(ghq root)/$repodir
+	fi
+}
+
+# ghq cursor
+csrepo() {
+	local repodir=$(ghq list | fzf -1 +m) &&
+	echo Open Cursor WorkSpace! : $(ghq root)/$repodir
+	if [ -n "$repodir" ]; then
+		cursor $(ghq root)/$repodir
 	fi
 }

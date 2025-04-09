@@ -4,6 +4,13 @@ set -euo pipefail
 
 cd $HOME
 
+echo '---------- install Rosetta ----------'
+if /usr/bin/pgrep oahd >/dev/null 2>&1; then
+  echo "skip installing Rosetta"
+else
+  /usr/sbin/softwareupdate --install-rosetta --agree-to-license
+fi
+
 echo '---------- clone dotfiles ----------'
 MY_ROOT_REPO=$HOME/ghq/github.com/nkdevlife
 

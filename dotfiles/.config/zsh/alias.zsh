@@ -1,8 +1,8 @@
 # general
 alias cpwd='pwd | tr -d "\n" | pbcopy'
+alias pbsort='pbpaste | sort | pbcopy'
 
 # cd
-alias -='cd -'
 alias ..='cd ..'
 alias ..2='cd ../..'
 alias ..3='cd ../../..'

@@ -1,6 +1,7 @@
 *.backup
 dotfiles/.config/gh/hosts.yml
 dotfiles/.config/raycast
-dotfiles/.config/karabiner/automatic_backups/*
+dotfiles/.config/karabiner/assets/
+dotfiles/.config/karabiner/automatic_backups/
 dotfiles/.config/composer/
 *.DS_Store

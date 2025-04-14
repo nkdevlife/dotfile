@@ -4,10 +4,10 @@ alias pbsort='pbpaste | sort | pbcopy'
 
 # cd
 alias ..='cd ..'
-alias ..2='cd ../..'
-alias ..3='cd ../../..'
-alias ..4='cd ../../../..'
-alias ..5='cd ../../../../..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias ......='cd ../../../../..'
 
 # rm
 alias rmrf='rm -rf'
@@ -16,7 +16,7 @@ alias rmrf='rm -rf'
 alias dotfiles='code $HOME/ghq/github.com/nkdevlife/dotfile'
 
 # nvim
-alias v='nvim'
+alias vi='nvim'
 
 # lazygit
 alias lg='lazygit'

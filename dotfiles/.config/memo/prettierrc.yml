@@ -1,0 +1,83 @@
+# ▶ 1行の最大文字数（超えると自動改行）／デフォルト: 80
+printWidth: 100
+
+# ▶ インデント幅（スペースの数）／デフォルト: 2
+tabWidth: 2
+
+# ▶ タブでインデントするか（false でスペース）／デフォルト: false
+useTabs: false
+
+# ▶ 文末にセミコロンを付けるか／デフォルト: true
+semi: true
+
+# ▶ 文字列にシングルクォートを使うか／デフォルト: false
+singleQuote: false
+
+# ▶ オブジェクトのキーをクォートする条件／デフォルト: "as-needed"
+#    - "as-needed"   : 必要な場合のみクォート
+#    - "consistent"  : 一つ必要なら全てクォート
+#    - "preserve"    : 元のまま保持
+quoteProps: as-needed
+
+# ▶ JSX内でもシングルクォートを使うか／デフォルト: false
+jsxSingleQuote: true
+
+# ▶ 複数行構文の末尾にカンマを付けるか／デフォルト: "all"
+#    - "none" : 一切付けない
+#    - "es5"  : 配列・オブジェクトなどに付ける（ES5準拠）
+#    - "all"  : 付けられるすべてに付ける
+trailingComma: all
+
+# ▶ オブジェクトの中括弧の前後にスペースを入れるか／デフォルト: true
+bracketSpacing: true
+
+# ▶ オブジェクトや要素の折り返し方（整形スタイルを維持）／非公式オプション
+objectWrap: preserve
+
+# ▶ JSX/HTMLの閉じタグ「>」の位置を同じ行に置くか／デフォルト: false
+bracketSameLine: false
+
+# ▶ 【非推奨】JSXの閉じタグ「>」の位置を同じ行に置くか／デフォルト: false
+# jsxBracketSameLine: false
+
+# ▶ アロー関数の引数に常に括弧を付けるか／デフォルト: "always"
+arrowParens: always
+
+# ▶ フォーマット開始位置（文字インデックス）／デフォルト: 0
+rangeStart: 0
+
+# ▶ フォーマット終了位置（Infinityでファイル末尾）／デフォルト: Infinity
+rangeEnd: Infinity
+
+# ▶ 特別なコメント（@format）があるファイルのみ整形対象にするか／デフォルト: false
+requirePragma: false
+
+# ▶ 整形時にファイル先頭へ @format コメントを自動追加するか／デフォルト: false
+insertPragma: false
+
+# ▶ マークダウンなどの折り返しスタイル／デフォルト: "preserve"
+#    - "always"   : 自動的に折り返す
+#    - "never"    : 折り返さない
+#    - "preserve" : 元のまま保持
+proseWrap: preserve
+
+# ▶ HTMLの空白感度の扱い／デフォルト: "css"
+#    - "css"     : CSSのルールに従う
+#    - "strict"  : 空白を厳密に扱う
+#    - "ignore"  : 空白の違いを無視
+htmlWhitespaceSensitivity: css
+
+# ▶ Vueファイルで <script> / <style> にインデントを付けるか／デフォルト: false
+vueIndentScriptAndStyle: false
+
+# ▶ 改行コードの形式／デフォルト: "lf"
+#    - "lf"   : Unix系（推奨）
+#    - "crlf" : Windows系
+#    - "cr"   : 古いMac系
+endOfLine: lf
+
+# ▶ Markdown等の埋め込みコードも整形するか／デフォルト: "auto"
+embeddedLanguageFormatting: auto
+
+# ▶ JSX/HTMLの属性を1行に1つずつ分けるか／デフォルト: false
+singleAttributePerLine: false

@@ -1,0 +1,12 @@
+# common
+Host *
+ AddKeysToAgent yes     # 接続時に毎回パスワードを求められないようにするため
+ UseKeychain yes        # 接続時に毎回パスワードを求められないようにするため
+
+Host {host}
+    HostName github.com # このまま
+    IdentityFile        # keyのpathを指定する
+    IdentitiesOnly yes  # IndentityFileで指定したpathのkeyのみを参照するため
+    TCPKeepAlive yes    # 接続中に操作せずに数分放置してもsshが切断されないようにするため
+    User git            # このまま
+# git clone git@{host}:{name}/{repo}

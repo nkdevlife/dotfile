@@ -23,7 +23,7 @@ for FILE in .??*; do
     DEST="${HOME}/${FILE}"
 
     if [ -e "$DEST" ] && [ ! -L "$DEST" ]; then
-        mv "$DEST" "$BACKUP_DIR"
+        mv -b "$DEST" "$BACKUP_DIR"
     fi
 
     ln -snfv "${SRC}" "${DEST}"

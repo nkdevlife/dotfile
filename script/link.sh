@@ -6,11 +6,9 @@ set -euo pipefail
 DOTFILE_ROOT=$(cd "$(dirname "$0")/.." && pwd)
 
 # バックアップ
-BACKUP_DIR="$HOME/.backup.conf"
+BACKUP_DIR="$HOME/.dotfiles_backup"
 
-if [ ! -d "$BACKUP_DIR" ]; then
-    mkdir -p "$BACKUP_DIR"
-fi
+mkdir -p "$BACKUP_DIR"
 
 cd "${DOTFILE_ROOT}"/dotfiles
 
@@ -23,7 +21,7 @@ for FILE in .??*; do
     DEST="${HOME}/${FILE}"
 
     if [ -e "$DEST" ] && [ ! -L "$DEST" ]; then
-        mv "$DEST" "$BACKUP_DIR"
+        mv "$DEST" "$BACKUP_DIR/${FILE}_$(date +%Y%m%d%H%M%S)"
     fi
 
     ln -snfv "${SRC}" "${DEST}"

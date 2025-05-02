@@ -4,5 +4,6 @@ dotfiles/.config/raycast
 dotfiles/.config/karabiner/assets/
 dotfiles/.config/karabiner/automatic_backups/
 dotfiles/.config/composer/
+**/n*.yml
 **/.ssh/*
 *.DS_Store
